@@ -1,0 +1,141 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "spinetool",
+    "version": "0.3.1"
+  },
+  "tauri": {
+    "cli":{
+      "args": [
+        {
+          "name":"file",
+          "index": 1,
+          "takesValue": true
+        }
+      ]
+    },
+    "systemTray":{
+      "iconPath": "icons/32x32.png"
+    },
+    "allowlist": {
+      "all": false,
+      "window": {
+        "all": true
+      },
+      "http": {
+        "all": true,
+        "request": true,
+        "scope": ["http://*","https://*"]
+      },
+      "path": {
+        "all": true
+      },
+      "shell": {
+        "all": false,
+        "open": true,
+        "sidecar": true,
+        "scope":[]
+      },
+      "dialog": {
+        "all": false,
+        "ask": false,
+        "confirm": false,
+        "message": false,
+        "open": true,
+        "save": true
+      },
+      "process": {
+        "all": false,
+        "exit": false,
+        "relaunch": true,
+        "relaunchDangerousAllowSymlinkMacos": false
+      },
+      "protocol": {
+        "all": false,
+        "asset": true,
+        "assetScope": ["**"]
+      },
+      "fs": {
+        "all": true,
+        "copyFile": false,
+        "createDir": false,
+        "exists": true,
+        "readDir": true,
+        "readFile": true,
+        "removeDir": false,
+        "removeFile": false,
+        "renameFile": false,
+        "scope": [
+          "**"
+        ],
+        "writeFile": false
+      }
+    },
+    "windows": [
+      {
+        "title": "spine",
+        "width": 940,
+        "height": 720,
+        "minWidth": 840,
+        "minHeight": 660,
+        "decorations": false
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "spinetool",
+      "shortDescription": "toolspine",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "resources": [
+        "./export/",
+        "./sqlite3.dll",
+        "./sqlite3.lib"
+      ],
+      "externalBin": [
+        "../bin/scaler41",
+        "../bin/scaler40",
+        "../bin/scaler38",
+        "../bin/scaler37",
+        "../bin/scaler36",
+        "../bin/scaler35",
+        "../bin/scaler34", 
+        "../bin/view/view3.7",
+        "../bin/view/view3.8",
+        "../bin/view/view4.0",
+        "../bin/view/view4.1",
+        "../bin/view/view4.2"
+      ],
+      "windows": {
+        "allowDowngrades": true,
+        "certificateThumbprint": null,
+        "digestAlgorithm": null,
+        "nsis": null,
+        "timestampUrl": null,
+        "tsp": false,
+        "webviewFixedRuntimePath": null,
+        "webviewInstallMode": {
+          "silent": true,
+          "type": "downloadBootstrapper"
+        },
+        "wix": {
+          "language": "zh-CN"
+        }
+      }
+    }
+  }
+}

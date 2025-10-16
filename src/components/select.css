@@ -1,0 +1,28 @@
+.select-style {
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  width: 100px;
+  /* text-align: center; */
+  color: #333;
+  -webkit-appearance: none; /* 移除iOS默认样式 */
+  -moz-appearance: none;    /* 移除Firefox默认样式 */
+  appearance: none;         /* 移除默认样式 */
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 12px 12px;
+}
+
+/* 当 select 元素获得焦点时添加样式 */
+.select-style:focus {
+  border-color: #66afe9;
+  outline: 0;
+}
+
+/* 针对不同浏览器的样式 */
+select::-ms-expand {
+  display: none; /* 隐藏 IE10+ 的下拉箭头 */
+}

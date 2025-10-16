@@ -1,0 +1,33 @@
+[package]
+name = "spinetool"
+version = "0.0.0"
+description = "A Tauri App"
+authors = ["lixxix"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+tauri-build = { version = "1", features = [] }
+
+[dependencies]
+tauri = { version = "1", features = [ "system-tray", "cli", "dialog-save", "http-all", "process-relaunch", "protocol-asset", "fs-all", "dialog-open", "window-all", "shell-open", "shell-sidecar", "path-all"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+walkdir = "2"
+rand = "0.8.5"
+warp = "0.3"
+tokio = { version = "1", features = ["full"] }
+rusqlite = "0.32.1" # 请查看最新版本号并替换
+chrono = "0.4.39"
+winreg = "0.52.0" # 请查看最新版本号并替换
+reqwest = { version = "0.12.2", features = ["multipart"] }
+dircpy = "0.3.16"
+dns-lookup = "2.0.4"
+open = "5.3.0"
+rquickjs = "0.8.1"
+regex = "1.11.1"
+
+[features]
+# This feature is used for production builds or when a dev server is not specified, DO NOT REMOVE!!
+custom-protocol = ["tauri/custom-protocol"]

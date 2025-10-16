@@ -1,24 +1,14 @@
-BSD 2-Clause License
+MIT 许可证
 
-Copyright (c) 2025, lixxix
+版权所有 (c) <年份> <版权所有者>
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
+特此免费授予任何获得本软件及相关文档文件（以下简称「软件」）副本的人不受限制地
+处理本软件的权限，包括但不限于使用、复制、修改、合并、发布、分发、再授权和/或销售
+本软件副本的权利，并允许接受本软件的人员在满足以下条件的情况下这样做：
 
-1. Redistributions of source code must retain the above copyright notice, this
-   list of conditions and the following disclaimer.
+上述版权声明和本许可声明应包含在本软件的所有副本或重要部分中。
 
-2. Redistributions in binary form must reproduce the above copyright notice,
-   this list of conditions and the following disclaimer in the documentation
-   and/or other materials provided with the distribution.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+本软件按「原样」提供，不附带任何明示或暗示的担保，包括但不限于对适销性、特定用途
+适用性和非侵权性的暗示担保。在任何情况下，作者或版权持有人均不对因本软件、其使用
+或其他交易而产生、引起或与之相关的任何索赔、损害或其他责任承担责任，无论是在合同
+诉讼、侵权行为还是其他方面。

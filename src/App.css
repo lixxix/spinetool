@@ -1,0 +1,51 @@
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2F2F2F; /* 深灰色背景 */
+  color: #FFFFFF; /* 白色文字 */
+  padding: 0 10px;
+  height: 35px; /* 标题栏的高度 */
+  -webkit-app-region: drag; /* 允许拖动窗口 */
+  user-select: none;
+}
+
+.window-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.window-controls {
+  display: flex;
+  align-items: center;
+  -webkit-app-region: no-drag; /* 防止窗口控制按钮拖动窗口 */
+}
+
+.control-btn {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-left: 5px;
+  border: none;
+  background: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.control-btn:hover {
+  background-color: #555; /* 鼠标悬停时的背景色 */
+}
+
+.control-btn:active {
+  background-color: #3C3C3C; /* 鼠标点击时的背景色 */
+}
+
+.control-btn.close-btn:hover {
+  background-color: #D32F2F; /* 关闭按钮鼠标悬停时的背景色 */
+}
+
+.control-btn.close-btn:active {
+  background-color: #B71C1C; /* 关闭按钮鼠标点击时的背景色 */
+}
