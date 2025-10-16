@@ -40,8 +40,7 @@
     "remark-gfm": "^4.0.0",
     "sonner": "^1.4.3",
     "spinetool": "file:",
-    "tailwindcss-animate": "^1.0.7",
-    "tauri-plugin-upload-api": "github:tauri-apps/tauri-plugin-upload#v1"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1",
